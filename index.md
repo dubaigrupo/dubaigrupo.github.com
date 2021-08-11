@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+<?php
+/**
+ * Grupo 04
+ * Grupo 03
+ * Grupo 05
+ * Grupo 06
+ */
 
-You can use the [editor on GitHub](https://github.com/dubaigrupo/dubaigrupo.github.com/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+$addresses = [
+	'https://chat.whatsapp.com/D4cfK2lkDN14ihwMglnDqt',
+	
+	
+	
+];
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+$size = count($addresses);
+$randomIndex = rand(0, $size - 1);
+$randomUrl = $addresses[$randomIndex];
 
-### Markdown
+header('Location: ' . $randomUrl, true, 303);
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dubaigrupo/dubaigrupo.github.com/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+?>
