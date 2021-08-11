@@ -1,22 +1,12 @@
-<?php
-/**
- * Grupo 04
- * Grupo 03
- * Grupo 05
- * Grupo 06
- */
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Meu Redirect</title>
 
-$addresses = [
-	'https://chat.whatsapp.com/D4cfK2lkDN14ihwMglnDqt',
-	
-	
-	
-];
-
-$size = count($addresses);
-$randomIndex = rand(0, $size - 1);
-$randomUrl = $addresses[$randomIndex];
-
-header('Location: ' . $randomUrl, true, 303);
-
-?>
+    <meta http-equiv="refresh" content="5; URL='https://www.homehost.com.br/'"/>
+</head>
+<body>
+...
+</body>
+</html>
